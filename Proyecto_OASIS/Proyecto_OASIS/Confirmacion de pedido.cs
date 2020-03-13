@@ -10,26 +10,16 @@ using System.Windows.Forms;
 
 namespace Proyecto_OASIS
 {
-    public partial class Pedido_Externo : Form
+    public partial class Confirmacion_de_pedido : Form
     {
-        public Pedido_Externo()
+        public Confirmacion_de_pedido()
         {
             InitializeComponent();
         }
 
-        private void Lbhora_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void HoraFecha_Tick(object sender, EventArgs e)
+        private void Timer1_Tick(object sender, EventArgs e)
         {
             lbhora.Text = DateTime.Now.ToString("hh:mm:ss dddd MMMM yyy ");
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

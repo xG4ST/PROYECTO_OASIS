@@ -69,6 +69,7 @@
             this.label1.Size = new System.Drawing.Size(267, 70);
             this.label1.TabIndex = 7;
             this.label1.Text = "SNACK OASIS";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // HoraFecha
             // 
