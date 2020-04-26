@@ -16,5 +16,10 @@ namespace Proyecto_OASIS
         {
             InitializeComponent();
         }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
