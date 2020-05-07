@@ -137,7 +137,7 @@
             this.label2.Location = new System.Drawing.Point(1149, 112);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(343, 49);
+            this.label2.Size = new System.Drawing.Size(275, 39);
             this.label2.TabIndex = 13;
             this.label2.Text = "CONFIRMACIÓN DE PEDIDO";
             // 
@@ -152,7 +152,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(931, 307);
+            this.button3.Location = new System.Drawing.Point(901, 344);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(216, 109);
             this.button3.TabIndex = 15;
@@ -161,7 +161,7 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(4F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
