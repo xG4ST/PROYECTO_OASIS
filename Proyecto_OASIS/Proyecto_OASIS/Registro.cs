@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proyecto_OASIS.MySql;
 
 namespace Proyecto_OASIS
 {
@@ -27,28 +28,36 @@ namespace Proyecto_OASIS
         private void register_button_Click(object sender, EventArgs e)
         {
             userAccount newAccount = new userAccount();
-            nuevaCuenta.nom_med = Nombre_TextBox.Text.Trim();
-            nuevaCuenta.especialidad_med = Especialidad_TextBox.Text.Trim();
-            nuevaCuenta.correo_med = Correo_TextBox.Text.Trim();
-            nuevaCuenta.contraseña_med = Contraseña_TextBox.Text.Trim();
+            newAccount.name_user = name_textbox.Text.Trim();
+            newAccount.account_user = registeruser_textbox.Text.Trim();
+            newAccount.password_user = registerpassword_textbox.Text.Trim();
+            newAccount.type_user = 1;
+            confirmpassword_textbox.Text.Trim();
 
-            if (string.IsNullOrEmpty(Nombre_TextBox.Text) || string.IsNullOrEmpty(Especialidad_TextBox.Text) || string.IsNullOrEmpty(Correo_TextBox.Text) || string.IsNullOrEmpty(Contraseña_TextBox.Text))
+            if (string.IsNullOrEmpty(name_textbox.Text) || string.IsNullOrEmpty(registeruser_textbox.Text) || string.IsNullOrEmpty(registerpassword_textbox.Text) || string.IsNullOrEmpty(confirmpassword_textbox.Text))
             {
                 MessageBox.Show("Los campos no pueden quedar vacios", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                int resultado = RegistrarCuentaMed.agregar(nuevaCuenta);
-                if (resultado > 0)
+                if (registerpassword_textbox.Text != confirmpassword_textbox.Text)
                 {
-                    MessageBox.Show("Usuario Registrado con Exito!", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Log Form1 = new Log();
-                    this.Hide();
-                    Form1.Show();
+                    MessageBox.Show("Las contraseñas no coinciden, porfavor coloque la misma contraseña en ambos campos", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    MessageBox.Show("No se pudo guardar el Usuario", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    int resultado = registerNewUserAccount.agregar(newAccount);
+                    if (resultado > 0)
+                    {
+                        MessageBox.Show("Usuario Registrado con Exito!", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Menu ToMenu = new Menu();
+                        this.Hide();
+                        ToMenu.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo guardar el Usuario", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }
