@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_OASIS
 {
-    public partial class Login : Form
+    public partial class Registro : Form
     {
-        public Login()
+        public Registro()
         {
             InitializeComponent();
         }
