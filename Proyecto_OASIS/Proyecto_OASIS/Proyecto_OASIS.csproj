@@ -68,6 +68,7 @@
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="MySql\Conexion.cs" />
+    <Compile Include="MySql\userAccount.cs" />
     <Compile Include="Pedido_Externo.cs">
       <SubType>Form</SubType>
     </Compile>
