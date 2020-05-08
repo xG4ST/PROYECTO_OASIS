@@ -46,17 +46,24 @@ namespace Proyecto_OASIS
                 }
                 else
                 {
-                    int resultado = registerNewUserAccount.agregar(newAccount);
-                    if (resultado > 0)
+                    if (newAccount.name_user == name_textbox.Text || newAccount.account_user == registeruser_textbox.Text)
                     {
-                        MessageBox.Show("Usuario Registrado con Exito!", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Menu ToMenu = new Menu();
-                        this.Hide();
-                        ToMenu.Show();
+                        MessageBox.Show("El usuario ya existe", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     else
                     {
-                        MessageBox.Show("No se pudo guardar el Usuario", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        int resultado = registerNewUserAccount.agregar(newAccount);
+                        if (resultado > 0)
+                        {
+                            MessageBox.Show("Usuario Registrado con Exito!", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            Menu ToMenu = new Menu();
+                            this.Hide();
+                            ToMenu.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se pudo guardar el Usuario", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
             }

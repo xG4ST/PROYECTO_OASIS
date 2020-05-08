@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Microsoft.VisualBasic;
 
 namespace Proyecto_OASIS
 {
@@ -32,24 +33,42 @@ namespace Proyecto_OASIS
             login.Parameters.AddWithValue("@password", password);
             login.Connection = conexion;
 
-            MySqlDataReader leer = login.ExecuteReader();
-            if (leer.Read())
+            if (string.IsNullOrEmpty(user_textbox.Text) || string.IsNullOrEmpty(password_textbox.Text))
             {
-                MessageBox.Show("Bienvenido", "Log In", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Menu ToMenu = new Menu();
-                this.Hide();
-                ToMenu.Show();
-                conexion.Close();
+                MessageBox.Show("Los campos no pueden quedar vacios", "Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("Usuario o Contraseña incorrectos", "Log In", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                conexion.Close();
+                MySqlDataReader leer = login.ExecuteReader();
+                if (leer.Read())
+                {
+                    MessageBox.Show("Bienvenido", "Log In", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Menu ToMenu = new Menu();
+                    this.Hide();
+                    ToMenu.Show();
+                    conexion.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o Contraseña incorrectos", "Log In", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    conexion.Close();
+                }
             }
         }
 
         private void register_button_Click(object sender, EventArgs e)
         {
+            string input = Interaction.InputBox("Introduzca la contraseña de administrador para crear un usuario", "Aviso", "", -1, -1);
+
+            //if (input == )
+            //{
+
+            //}
+            //else
+            //{
+
+            //}
+
             Registro ToRegistro = new Registro();
             this.Hide();
             ToRegistro.Show();
