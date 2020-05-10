@@ -59,7 +59,7 @@
             this.bunifuTileButton1.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.bunifuTileButton1.LabelPosition = 120;
             this.bunifuTileButton1.LabelText = "SOLICITAR JUEGO";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(176, 101);
+            this.bunifuTileButton1.Location = new System.Drawing.Point(130, 83);
             this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuTileButton1.Name = "bunifuTileButton1";
             this.bunifuTileButton1.Size = new System.Drawing.Size(475, 160);
@@ -80,7 +80,7 @@
             this.bunifuTileButton2.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.bunifuTileButton2.LabelPosition = 120;
             this.bunifuTileButton2.LabelText = "SOLICITAR JUEGO";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(912, 124);
+            this.bunifuTileButton2.Location = new System.Drawing.Point(941, 83);
             this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuTileButton2.Name = "bunifuTileButton2";
             this.bunifuTileButton2.Size = new System.Drawing.Size(475, 160);
