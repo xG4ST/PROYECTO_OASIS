@@ -73,5 +73,26 @@ namespace Proyecto_OASIS
             this.Hide();
             ToRegistro.Show();
         }
+
+
+        private void Lbhora_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            lbhora.Text = DateTime.Now.ToString("hh:mm:ss dddd MMMM yyy ");
+        }
+
+        private void Lbhora_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lbhora_Click_2(object sender, EventArgs e)
+        {
+            lbhora.Text = DateTime.Now.ToString("hh:mm:ss dddd MMMM yyy ");
+        }
     }
 }

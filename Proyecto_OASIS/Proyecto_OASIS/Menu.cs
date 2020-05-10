@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace Proyecto_OASIS
 {
@@ -21,5 +22,17 @@ namespace Proyecto_OASIS
         {
 
         }
+
+   
+        private void BunifuTileButton2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bienvenido", "Log In", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Ya_eres_cliente ToMenu = new Ya_eres_cliente();
+            this.Hide();
+            ToMenu.Show();
+      
+        }
+
+        
     }
 }

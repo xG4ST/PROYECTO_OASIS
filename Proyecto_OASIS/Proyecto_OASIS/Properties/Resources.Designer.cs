@@ -63,6 +63,36 @@ namespace Proyecto_OASIS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _37942 {
+            get {
+                object obj = ResourceManager.GetObject("37942", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap activo_1 {
+            get {
+                object obj = ResourceManager.GetObject("activo-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap activo_2 {
+            get {
+                object obj = ResourceManager.GetObject("activo-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Fondo {
             get {
                 object obj = ResourceManager.GetObject("Fondo", resourceCulture);
@@ -73,9 +103,29 @@ namespace Proyecto_OASIS.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Imagen_3 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mesa_de_trabajo {
             get {
                 object obj = ResourceManager.GetObject("Mesa de trabajo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectángulo_48 {
+            get {
+                object obj = ResourceManager.GetObject("Rectángulo 48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

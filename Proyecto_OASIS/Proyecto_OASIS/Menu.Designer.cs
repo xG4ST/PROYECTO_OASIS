@@ -28,178 +28,176 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // bunifuTileButton1
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Gold;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.flowLayoutPanel1.Controls.Add(this.panel9);
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Controls.Add(this.panel2);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Controls.Add(this.panel4);
-            this.flowLayoutPanel1.Controls.Add(this.panel5);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(20, 109);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(770, 720);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.bunifuTileButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuTileButton1.BackColor = System.Drawing.Color.DarkGray;
+            this.bunifuTileButton1.color = System.Drawing.Color.DarkGray;
+            this.bunifuTileButton1.colorActive = System.Drawing.Color.Gainsboro;
+            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton1.Font = new System.Drawing.Font("BigNoodleTitling", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTileButton1.ForeColor = System.Drawing.Color.Crimson;
+            this.bunifuTileButton1.Image = null;
+            this.bunifuTileButton1.ImagePosition = 55;
+            this.bunifuTileButton1.ImageZoom = 50;
+            this.bunifuTileButton1.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.bunifuTileButton1.LabelPosition = 120;
+            this.bunifuTileButton1.LabelText = "SOLICITAR JUEGO";
+            this.bunifuTileButton1.Location = new System.Drawing.Point(176, 101);
+            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(0);
+            this.bunifuTileButton1.Name = "bunifuTileButton1";
+            this.bunifuTileButton1.Size = new System.Drawing.Size(475, 160);
+            this.bunifuTileButton1.TabIndex = 0;
             // 
-            // panel9
+            // bunifuTileButton2
             // 
-            this.panel9.BackColor = System.Drawing.Color.Orange;
-            this.panel9.Location = new System.Drawing.Point(2, 3);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(246, 384);
-            this.panel9.TabIndex = 9;
+            this.bunifuTileButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuTileButton2.BackColor = System.Drawing.Color.DarkGray;
+            this.bunifuTileButton2.color = System.Drawing.Color.DarkGray;
+            this.bunifuTileButton2.colorActive = System.Drawing.Color.Gainsboro;
+            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton2.Font = new System.Drawing.Font("BigNoodleTitling", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuTileButton2.ForeColor = System.Drawing.Color.Crimson;
+            this.bunifuTileButton2.Image = null;
+            this.bunifuTileButton2.ImagePosition = 55;
+            this.bunifuTileButton2.ImageZoom = 50;
+            this.bunifuTileButton2.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.bunifuTileButton2.LabelPosition = 120;
+            this.bunifuTileButton2.LabelText = "SOLICITAR JUEGO";
+            this.bunifuTileButton2.Location = new System.Drawing.Point(912, 124);
+            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(0);
+            this.bunifuTileButton2.Name = "bunifuTileButton2";
+            this.bunifuTileButton2.Size = new System.Drawing.Size(475, 160);
+            this.bunifuTileButton2.TabIndex = 1;
+            this.bunifuTileButton2.Click += new System.EventHandler(this.BunifuTileButton2_Click);
             // 
-            // panel1
+            // pictureBox3
             // 
-            this.panel1.BackColor = System.Drawing.Color.Orange;
-            this.panel1.Location = new System.Drawing.Point(252, 3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(246, 384);
-            this.panel1.TabIndex = 10;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::Proyecto_OASIS.Properties.Resources.activo_1;
+            this.pictureBox3.Location = new System.Drawing.Point(-5, 338);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(301, 434);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabStop = false;
             // 
-            // panel2
+            // pictureBox1
             // 
-            this.panel2.BackColor = System.Drawing.Color.Orange;
-            this.panel2.Location = new System.Drawing.Point(502, 3);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(246, 384);
-            this.panel2.TabIndex = 11;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Proyecto_OASIS.Properties.Resources._37942;
+            this.pictureBox1.Location = new System.Drawing.Point(243, 468);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(395, 330);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
-            // panel3
+            // pictureBox2
             // 
-            this.panel3.BackColor = System.Drawing.Color.Orange;
-            this.panel3.Location = new System.Drawing.Point(2, 393);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(246, 384);
-            this.panel3.TabIndex = 12;
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Proyecto_OASIS.Properties.Resources.activo_2;
+            this.pictureBox2.Location = new System.Drawing.Point(607, 326);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(295, 434);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
             // 
-            // panel4
+            // pictureBox4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Orange;
-            this.panel4.Location = new System.Drawing.Point(252, 393);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(246, 384);
-            this.panel4.TabIndex = 13;
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = global::Proyecto_OASIS.Properties.Resources.activo_2;
+            this.pictureBox4.Location = new System.Drawing.Point(1260, 311);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(295, 434);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 11;
+            this.pictureBox4.TabStop = false;
             // 
-            // panel5
+            // pictureBox5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Orange;
-            this.panel5.Location = new System.Drawing.Point(502, 393);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(246, 384);
-            this.panel5.TabIndex = 14;
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = global::Proyecto_OASIS.Properties.Resources._37942;
+            this.pictureBox5.Location = new System.Drawing.Point(896, 453);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(395, 330);
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
             // 
-            // button1
+            // pictureBox6
             // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.Font = new System.Drawing.Font("BigNoodleTitling", 71.99999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(0)))), ((int)(((byte)(109)))));
-            this.button1.Location = new System.Drawing.Point(1130, 718);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(305, 111);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "ACEPTAR";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("BigNoodleTitling", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1149, 112);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(275, 39);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "CONFIRMACIÓN DE PEDIDO";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1013, 278);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(947, 387);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(216, 109);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Boton de prueba";
-            this.button3.UseVisualStyleBackColor = true;
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::Proyecto_OASIS.Properties.Resources.activo_1;
+            this.pictureBox6.Location = new System.Drawing.Point(607, 326);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(301, 434);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox6.TabIndex = 9;
+            this.pictureBox6.TabStop = false;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(4F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Yellow;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::Proyecto_OASIS.Properties.Resources.Imagen_3;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1584, 861);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.bunifuTileButton2);
+            this.Controls.Add(this.bunifuTileButton1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("BigNoodleTitling", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Gold;
+            this.ForeColor = System.Drawing.Color.Transparent;
             this.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.name_textbox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.registeruser_textbox = new System.Windows.Forms.TextBox();
@@ -38,6 +39,8 @@
             this.back_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.confirmpassword_textbox = new System.Windows.Forms.TextBox();
+            this.lbhora = new System.Windows.Forms.Label();
+            this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // name_textbox
@@ -164,12 +167,31 @@
             this.confirmpassword_textbox.Size = new System.Drawing.Size(811, 68);
             this.confirmpassword_textbox.TabIndex = 25;
             // 
+            // lbhora
+            // 
+            this.lbhora.AutoSize = true;
+            this.lbhora.BackColor = System.Drawing.Color.Transparent;
+            this.lbhora.Font = new System.Drawing.Font("BigNoodleTitling", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbhora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(194)))), ((int)(((byte)(149)))));
+            this.lbhora.Location = new System.Drawing.Point(941, 9);
+            this.lbhora.Name = "lbhora";
+            this.lbhora.Size = new System.Drawing.Size(159, 70);
+            this.lbhora.TabIndex = 26;
+            this.lbhora.Text = "label6";
+            this.lbhora.Click += new System.EventHandler(this.Lbhora_Click);
+            // 
+            // horaFecha
+            // 
+            this.horaFecha.Enabled = true;
+            this.horaFecha.Tick += new System.EventHandler(this.HoraFecha_Tick);
+            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto_OASIS.Properties.Resources.Fondo;
             this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.Controls.Add(this.lbhora);
             this.Controls.Add(this.confirmpassword_textbox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.register_button);
@@ -200,5 +222,7 @@
         private System.Windows.Forms.Button back_button;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox confirmpassword_textbox;
+        private System.Windows.Forms.Label lbhora;
+        private System.Windows.Forms.Timer horaFecha;
     }
 }

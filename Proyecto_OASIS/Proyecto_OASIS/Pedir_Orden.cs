@@ -31,6 +31,11 @@ namespace Proyecto_OASIS
         {
 
         }
+
+        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
  

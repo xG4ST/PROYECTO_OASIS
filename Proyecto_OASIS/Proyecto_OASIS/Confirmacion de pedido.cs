@@ -21,5 +21,10 @@ namespace Proyecto_OASIS
         {
             lbhora.Text = DateTime.Now.ToString("hh:mm:ss dddd MMMM yyy ");
         }
+
+        private void Lbhora_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

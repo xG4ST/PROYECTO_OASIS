@@ -33,12 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Documents\Librerias VIsual\Design Dashboard Modern\BUNIFU UI\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data">
       <HintPath>bin\Release\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -91,6 +95,12 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ya eres cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ya eres cliente.Designer.cs">
+      <DependentUpon>Ya eres cliente.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Confirmacion de pedido.resx">
       <DependentUpon>Confirmacion de pedido.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +129,9 @@
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ya eres cliente.resx">
+      <DependentUpon>Ya eres cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -140,6 +153,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Mesa de trabajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectángulo 48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\37942.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\activo-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\activo-1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

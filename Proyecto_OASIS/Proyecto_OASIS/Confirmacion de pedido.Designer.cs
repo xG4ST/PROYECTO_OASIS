@@ -53,6 +53,7 @@
             this.lbhora.Size = new System.Drawing.Size(130, 70);
             this.lbhora.TabIndex = 10;
             this.lbhora.Text = "hora";
+            this.lbhora.Click += new System.EventHandler(this.Lbhora_Click);
             // 
             // label1
             // 
