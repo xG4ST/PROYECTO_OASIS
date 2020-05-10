@@ -79,8 +79,8 @@
             this.bunifuTileButton2.ImageZoom = 50;
             this.bunifuTileButton2.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.bunifuTileButton2.LabelPosition = 120;
-            this.bunifuTileButton2.LabelText = "SOLICITAR JUEGO";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(941, 83);
+            this.bunifuTileButton2.LabelText = "MENU";
+            this.bunifuTileButton2.Location = new System.Drawing.Point(908, 83);
             this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(0);
             this.bunifuTileButton2.Name = "bunifuTileButton2";
             this.bunifuTileButton2.Size = new System.Drawing.Size(475, 160);
@@ -135,8 +135,8 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::Proyecto_OASIS.Properties.Resources._37942;
-            this.pictureBox5.Location = new System.Drawing.Point(896, 453);
+            this.pictureBox5.Image = global::Proyecto_OASIS.Properties.Resources.menu;
+            this.pictureBox5.Location = new System.Drawing.Point(908, 392);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(395, 330);
             this.pictureBox5.TabIndex = 10;

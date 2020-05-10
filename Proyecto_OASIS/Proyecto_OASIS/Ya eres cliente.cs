@@ -16,5 +16,18 @@ namespace Proyecto_OASIS
         {
             InitializeComponent();
         }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+           
+            Ya_eres_cliente ToMenu = new Ya_eres_cliente();
+            this.Hide();
+            ToMenu.Show();
+        }
     }
 }
