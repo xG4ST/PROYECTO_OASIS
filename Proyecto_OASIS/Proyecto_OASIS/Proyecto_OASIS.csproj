@@ -60,6 +60,12 @@
     <Compile Include="ClienteFrecuente.Designer.cs">
       <DependentUpon>ClienteFrecuente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Comida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comida.Designer.cs">
+      <DependentUpon>Comida.cs</DependentUpon>
+    </Compile>
     <Compile Include="Confirmacion de pedido.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
     <EmbeddedResource Include="ClienteFrecuente.resx">
       <DependentUpon>ClienteFrecuente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comida.resx">
+      <DependentUpon>Comida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Confirmacion de pedido.resx">
       <DependentUpon>Confirmacion de pedido.cs</DependentUpon>

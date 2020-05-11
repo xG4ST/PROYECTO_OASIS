@@ -78,5 +78,15 @@ namespace Proyecto_OASIS
         {
             lbhora.Text = DateTime.Now.ToString("hh:mm:ss dddd MMMM yyy ");
         }
+
+        private void Name_textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Registeruser_textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

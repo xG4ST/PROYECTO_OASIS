@@ -11,7 +11,7 @@ namespace Proyecto_OASIS.MySql
     {
         public static MySqlConnection obtainConexion()
         {
-            MySqlConnection conexion = new MySqlConnection("server = 127.0.0.1; database = snack_db; Uid = root; pwd = 2000;");
+            MySqlConnection conexion = new MySqlConnection("server = 127.0.0.1; database = snack_db; Uid = root; pwd = olakasegus64;");
             conexion.Open();
             return conexion;
         }
