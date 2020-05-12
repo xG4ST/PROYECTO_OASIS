@@ -25,7 +25,7 @@ namespace Proyecto_OASIS
         private void Label2_Click(object sender, EventArgs e)
         {
            
-            Ya_eres_cliente ToMenu = new Ya_eres_cliente();
+            Comida ToMenu = new Comida();
             this.Hide();
             ToMenu.Show();
         }

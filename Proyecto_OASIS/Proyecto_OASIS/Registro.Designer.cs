@@ -54,6 +54,7 @@
             this.name_textbox.Name = "name_textbox";
             this.name_textbox.Size = new System.Drawing.Size(811, 68);
             this.name_textbox.TabIndex = 17;
+            this.name_textbox.TextChanged += new System.EventHandler(this.Name_textbox_TextChanged);
             // 
             // label3
             // 
@@ -78,6 +79,7 @@
             this.registeruser_textbox.Name = "registeruser_textbox";
             this.registeruser_textbox.Size = new System.Drawing.Size(811, 68);
             this.registeruser_textbox.TabIndex = 18;
+            this.registeruser_textbox.TextChanged += new System.EventHandler(this.Registeruser_textbox_TextChanged);
             // 
             // registerpassword_textbox
             // 

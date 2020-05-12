@@ -24,7 +24,7 @@ namespace Proyecto_OASIS
             string user = user_textbox.Text;
             string password = password_textbox.Text;
 
-            MySqlConnection conexion = new MySqlConnection("server = 127.0.0.1; database = snack_db; Uid = root; pwd = 2000;");
+            MySqlConnection conexion = new MySqlConnection("server = 127.0.0.1; database = snack_db; Uid = root; pwd = olakasegus64;");
             conexion.Open();
 
             MySqlCommand login = new MySqlCommand();
@@ -93,6 +93,11 @@ namespace Proyecto_OASIS
         private void Lbhora_Click_2(object sender, EventArgs e)
         {
             lbhora.Text = DateTime.Now.ToString("hh:mm:ss dddd MMMM yyy ");
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
