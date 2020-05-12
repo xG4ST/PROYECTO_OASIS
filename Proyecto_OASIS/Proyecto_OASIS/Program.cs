@@ -16,7 +16,7 @@ namespace Proyecto_OASIS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Comida());
+            Application.Run(new Login());
         }
     }
 }
