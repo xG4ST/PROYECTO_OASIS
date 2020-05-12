@@ -12,9 +12,41 @@ namespace Proyecto_OASIS
 {
     public partial class Comida : Form
     {
+        MySql.Comandos cma = new MySql.Comandos();
+
         public Comida()
         {
             InitializeComponent();
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GroupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Comida_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            cma.llenarCombo(comboBox1);
         }
     }
 }

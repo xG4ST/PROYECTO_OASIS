@@ -136,7 +136,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::Proyecto_OASIS.Properties.Resources.menu;
-            this.pictureBox5.Location = new System.Drawing.Point(908, 392);
+            this.pictureBox5.Location = new System.Drawing.Point(941, 418);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(395, 380);
             this.pictureBox5.TabIndex = 10;
