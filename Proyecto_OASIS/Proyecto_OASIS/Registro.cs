@@ -54,6 +54,8 @@ namespace Proyecto_OASIS
 
                     MySqlCommand compareUser = new MySqlCommand();
                     compareUser.CommandText = "SELECT * FROM user WHERE account_user = @newAccount.account_user AND password_user = @newAccount.password_user";
+                    compareUser.Parameters.AddWithValue("@newAccount.account_user", newAccount.account_user);
+                    compareUser.Parameters.AddWithValue("@newAccount.password_user", newAccount.password_user);
                     compareUser.Connection = conexion;
 
                     MySqlDataReader leer = compareUser.ExecuteReader();
@@ -68,9 +70,9 @@ namespace Proyecto_OASIS
                         if (resultado > 0)
                         {
                             MessageBox.Show("Usuario Registrado con Exito!", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            Menu ToMenu = new Menu();
-                            this.Hide();
-                            ToMenu.Show();
+                            //Menu ToMenu = new Menu();
+                            //this.Hide();
+                            //ToMenu.Show();
                         }
                         else
                         {
