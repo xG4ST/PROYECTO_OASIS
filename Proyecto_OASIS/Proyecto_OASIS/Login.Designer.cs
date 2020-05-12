@@ -35,8 +35,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.login_button = new System.Windows.Forms.Button();
             this.register_button = new System.Windows.Forms.Button();
+            this.Hora = new System.Windows.Forms.Timer(this.components);
             this.lbhora = new System.Windows.Forms.Label();
-            this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // user_textbox
@@ -47,7 +47,7 @@
             this.user_textbox.BackColor = System.Drawing.Color.Orange;
             this.user_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.user_textbox.Location = new System.Drawing.Point(355, 363);
-            this.user_textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.user_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.user_textbox.Name = "user_textbox";
             this.user_textbox.Size = new System.Drawing.Size(429, 49);
             this.user_textbox.TabIndex = 0;
@@ -60,7 +60,7 @@
             this.password_textbox.BackColor = System.Drawing.Color.Orange;
             this.password_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password_textbox.Location = new System.Drawing.Point(355, 468);
-            this.password_textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.password_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.password_textbox.Name = "password_textbox";
             this.password_textbox.PasswordChar = '*';
             this.password_textbox.Size = new System.Drawing.Size(429, 49);
@@ -99,7 +99,7 @@
             this.login_button.Font = new System.Drawing.Font("BigNoodleTitling", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(0)))), ((int)(((byte)(109)))));
             this.login_button.Location = new System.Drawing.Point(469, 686);
-            this.login_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.login_button.Margin = new System.Windows.Forms.Padding(4);
             this.login_button.Name = "login_button";
             this.login_button.Size = new System.Drawing.Size(252, 70);
             this.login_button.TabIndex = 20;
@@ -113,7 +113,7 @@
             this.register_button.Font = new System.Drawing.Font("BigNoodleTitling", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(0)))), ((int)(((byte)(109)))));
             this.register_button.Location = new System.Drawing.Point(120, 686);
-            this.register_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.register_button.Margin = new System.Windows.Forms.Padding(4);
             this.register_button.Name = "register_button";
             this.register_button.Size = new System.Drawing.Size(252, 70);
             this.register_button.TabIndex = 21;
@@ -121,23 +121,24 @@
             this.register_button.UseVisualStyleBackColor = false;
             this.register_button.Click += new System.EventHandler(this.register_button_Click);
             // 
+            // Hora
+            // 
+            this.Hora.Enabled = true;
+            this.Hora.Tick += new System.EventHandler(this.Hora_Tick);
+            // 
             // lbhora
             // 
             this.lbhora.AutoSize = true;
             this.lbhora.BackColor = System.Drawing.Color.Transparent;
             this.lbhora.Font = new System.Drawing.Font("BigNoodleTitling", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbhora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(194)))), ((int)(((byte)(149)))));
-            this.lbhora.Location = new System.Drawing.Point(71, -4);
+            this.lbhora.Location = new System.Drawing.Point(13, -3);
             this.lbhora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbhora.Name = "lbhora";
             this.lbhora.Size = new System.Drawing.Size(162, 87);
             this.lbhora.TabIndex = 22;
-            this.lbhora.Text = "hora";
+            this.lbhora.Text = "Hora";
             this.lbhora.Click += new System.EventHandler(this.Lbhora_Click_2);
-            // 
-            // horaFecha
-            // 
-            this.horaFecha.Enabled = true;
             // 
             // Login
             // 
@@ -154,7 +155,7 @@
             this.Controls.Add(this.password_textbox);
             this.Controls.Add(this.user_textbox);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -172,7 +173,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button login_button;
         private System.Windows.Forms.Button register_button;
+        private System.Windows.Forms.Timer Hora;
         private System.Windows.Forms.Label lbhora;
-        private System.Windows.Forms.Timer horaFecha;
     }
 }

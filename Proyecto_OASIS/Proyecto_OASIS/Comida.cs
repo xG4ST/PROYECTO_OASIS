@@ -8,10 +8,7 @@ namespace Proyecto_OASIS
 {
     public partial class Comida : Form
     {
-      MySqlConnection conexion = new MySqlConnection("server = localhost; database=snack_db; Uid=root; pwd = ;");
-
-
-
+      MySqlConnection conexion = new MySqlConnection("server = 127.0.0.1; database= snack_db; Uid = root; pwd = 2000;");
 
         public Comida()
         {
@@ -21,42 +18,49 @@ namespace Proyecto_OASIS
 
         public void cargar_datos()
         {
-            conexion.Open();
-            MySqlCommand cm = new MySqlCommand("SELECT id_product, name_product FROM product", conexion);
             //SELECT* FROM snack_db.product, name_product
             //snack_db.product
             //SELECT id_product,name_product FROM product
+
+            string product = "Alita";
+
+            conexion.Open();
+            MySqlCommand cm = new MySqlCommand("SELECT id_prod, name_prod FROM product WHERE name_prod = @product", conexion);
+            cm.Parameters.AddWithValue("@product", product);
             MySqlDataAdapter da = new MySqlDataAdapter(cm);
             DataTable dt = new DataTable();
             da.Fill(dt);
             conexion.Close();
 
-            DataRow fila = dt.NewRow(); ;
-            fila["name_product"] = "Seleccionar caomida";
+            DataRow fila = dt.NewRow();
+            fila["name_prod"] = "Selecciona un producto";
             dt.Rows.InsertAt(fila, 0);
 
-            comboBox1.ValueMember = "name_product";
-            comboBox1.DisplayMember = "id_product";
+            comboBox1.ValueMember = "id_prod";
+            comboBox1.DisplayMember = "name_prod";
             comboBox1.DataSource = dt;
         }
 
         public void carga_des_product(String name_product)
         {
-            conexion.Open();
-            MySqlCommand cm = new MySqlCommand("SELECT id_product,name_product FROM product WHERE ", conexion);
-            cm.Parameters.AddWithValue("",);
-            MySqlDataAdapter da = new MySqlDataAdapter(cm);
-            DataTable da = new DataTable();
-            da.Fill(dt);
+            //conexion.Open();
+            //MySqlCommand cm = new MySqlCommand("SELECT id_product, name_product, des_product FROM product WHERE name_product = Alita", conexion);
 
 
-            DataRow fila = dt.NewRow(); ;
-            dr["Aqui va lo que quieres seleccionar"] = "La seleccion";
-            dt.Rows.InsertAt(dr, 0);
 
-            comboBox2.ValueMember = "";
-            comboBox2.DisplayMember = "No";
-            comboBox2.DataSource = dt;
+            //cm.Parameters.AddWithValue("des_prod", );
+            //MySqlDataAdapter da = new MySqlDataAdapter(cm);
+            //DataTable cm = new DataTable();
+            //da.Fill(dt);
+            //return dt;
+
+            //DataRow fila = dt.NewRow(); ;
+            //dr["Aqui va lo que quieres seleccionar"] = "La seleccion";
+            //dt.Rows.InsertAt(dr, 0);
+
+            //comboBox2.ValueMember = "";
+            //comboBox2.DisplayMember = "No";
+            //comboBox2.DataSource = dt;
         }
 
 
@@ -82,11 +86,38 @@ namespace Proyecto_OASIS
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           // if (comboBox1.SelectedValue.ToString() != null)
+            // if (comboBox1.SelectedValue.ToString() != null)
             //{
-              //  String name_prod = comboBox1.SelectedValue.ToString();
-               // cargar_datos(price_product)
-           // }
+            //  String name_prod = comboBox1.SelectedValue.ToString();
+            // cargar_datos(price_product)
+            // }
+
+
+
+
+
+
+            //conexion.Open();
+            //MySqlCommand cm = new MySqlCommand("SELECT id_product, name_product, des_product FROM product WHERE name_product = Alita");
+            //MySqlDataAdapter adaptador = new MySqlDataAdapter(cm);
+            //DataSet ds = new DataSet();
+            //adaptador.Fill(ds);
+            
+
+
+            //MySqlDataReader leer = cm.ExecuteReader();
+            //if (leer.Read())
+            //{
+
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Usuario o Contraseña incorrectos", "Log In", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    conexion.Close();
+            //}
+
+
+
         }
 
         private void Button1_Click(object sender, EventArgs e)
