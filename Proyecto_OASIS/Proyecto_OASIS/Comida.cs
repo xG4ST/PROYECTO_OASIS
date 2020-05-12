@@ -3,11 +3,12 @@ using System;
 using System.Data;
 using System.Windows.Forms;
 
+
 namespace Proyecto_OASIS
 {
     public partial class Comida : Form
     {
-       // MySqlConnection conexion = new MySqlConnection("server = localhost; database=snack_db; Uid=root; pwd = ;");
+      MySqlConnection conexion = new MySqlConnection("server = localhost; database=snack_db; Uid=root; pwd = ;");
 
 
 
@@ -20,43 +21,43 @@ namespace Proyecto_OASIS
 
         public void cargar_datos()
         {
-          //conexion.Open();
-          //   MySqlCommand cm = new MySqlCommand"SELECT id_product,name_product FROM product", conexion);
-          //  //SELECT * FROM snack_db.product, name_product
-          //  //snack_db.product
-          //  //SELECT id_product,name_product FROM product
-          //  MySqlDataAdapter da = new MySqlDataAdapter(cm);
-          //  DataTable dt = new DataTable();
-          //  da.Fill(dt);
-          //  conexion.Close();
+            conexion.Open();
+            MySqlCommand cm = new MySqlCommand("SELECT id_product, name_product FROM product", conexion);
+            //SELECT* FROM snack_db.product, name_product
+            //snack_db.product
+            //SELECT id_product,name_product FROM product
+            MySqlDataAdapter da = new MySqlDataAdapter(cm);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            conexion.Close();
 
-            //DataRow fila = dt.NewRow(); ;
-            //fila["name_product"] = "Seleccionar caomida";
-            //dt.Rows.InsertAt(fila, 0);
+            DataRow fila = dt.NewRow(); ;
+            fila["name_product"] = "Seleccionar caomida";
+            dt.Rows.InsertAt(fila, 0);
 
-            //comboBox1.ValueMember = "name_product";
-            //comboBox1.DisplayMember = "id_product";
-            //comboBox1.DataSource = dt;
+            comboBox1.ValueMember = "name_product";
+            comboBox1.DisplayMember = "id_product";
+            comboBox1.DataSource = dt;
         }
 
-        //public void carga_des_product(String name_product)
-        //{
-        //    conexion.Open();
-        //    MySqlCommand cm = new MySqlCommand("SELECT id_product,name_product FROM product WHERE ", conexion);
-        //    cm.Parameters.A ddWithValue("",);
-        //    MySqlDataAdapter da = new MySqlDataAdapter(cm);
-        //    DataTable d = new DataTable();
-        //    da.Fill(dt);
+        public void carga_des_product(String name_product)
+        {
+            conexion.Open();
+            MySqlCommand cm = new MySqlCommand("SELECT id_product,name_product FROM product WHERE ", conexion);
+            cm.Parameters.AddWithValue("",);
+            MySqlDataAdapter da = new MySqlDataAdapter(cm);
+            DataTable da = new DataTable();
+            da.Fill(dt);
 
 
-        //    DataRow fila = dt.NewRow(); ;
-        //    dr["Aqui va lo que quieres seleccionar"] = "La seleccion";
-        //    dt.Rows.InsertAt(dr, 0);
+            DataRow fila = dt.NewRow(); ;
+            dr["Aqui va lo que quieres seleccionar"] = "La seleccion";
+            dt.Rows.InsertAt(dr, 0);
 
-        //    comboBox2.ValueMember = "";
-        //    comboBox2.DisplayMember = "No";
-        //    comboBox2.DataSource = dt;
-        //}
+            comboBox2.ValueMember = "";
+            comboBox2.DisplayMember = "No";
+            comboBox2.DataSource = dt;
+        }
 
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
