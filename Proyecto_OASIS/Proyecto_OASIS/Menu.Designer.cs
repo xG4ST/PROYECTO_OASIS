@@ -155,7 +155,7 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(4F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::Proyecto_OASIS.Properties.Resources.Imagen_3;

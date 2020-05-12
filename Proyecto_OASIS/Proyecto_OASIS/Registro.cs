@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proyecto_OASIS.MySql;
+using MySql.Data.MySqlClient;
 
 namespace Proyecto_OASIS
 {
@@ -46,14 +47,24 @@ namespace Proyecto_OASIS
                 }
                 else
                 {
-                    //if (newAccount.name_user == name_textbox.Text || newAccount.account_user == registeruser_textbox.Text)
-                    //{
-                    //    MessageBox.Show("El usuario ya existe", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    //}
-                    //else
-                    //{
-                    //}
-                        int resultado = registerNewUserAccount.agregar(newAccount);
+
+                    //newAccount.name_user == name_textbox.Text || newAccount.account_user == registeruser_textbox.Text
+                    MySqlConnection conexion = new MySqlConnection("server = 127.0.0.1; database = snack_db; Uid = root; pwd = 2000;");
+                    conexion.Open();
+
+                    MySqlCommand compareUser = new MySqlCommand();
+                    compareUser.CommandText = "SELECT * FROM user WHERE account_user = @newAccount.account_user AND password_user = @newAccount.password_user";
+                    compareUser.Connection = conexion;
+
+                    MySqlDataReader leer = compareUser.ExecuteReader();
+                    if (leer.Read())
+                    {
+                        MessageBox.Show("El usuario ya existe", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        conexion.Close();
+                    }
+                    else
+                    {
+                    int resultado = registerNewUserAccount.agregar(newAccount);
                         if (resultado > 0)
                         {
                             MessageBox.Show("Usuario Registrado con Exito!", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -65,6 +76,7 @@ namespace Proyecto_OASIS
                         {
                             MessageBox.Show("No se pudo guardar el Usuario", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
+                    }
                 }
             }
         }
