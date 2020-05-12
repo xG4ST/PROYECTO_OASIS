@@ -100,7 +100,7 @@ namespace Proyecto_OASIS
 
         private void Button1_Click_1(object sender, EventArgs e)
         {
-            Comida ToMenu = new Comida();
+            Confirmacion_de_pedido ToMenu = new Confirmacion_de_pedido();
             this.Hide();
             ToMenu.Show();
         }
