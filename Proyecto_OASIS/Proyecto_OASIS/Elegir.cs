@@ -34,9 +34,9 @@ namespace Proyecto_OASIS
 
         private void Label3_Click(object sender, EventArgs e)
         {
-            Registro ToRegistro = new Registro();
+            RegistrarProductos ToRegistrarProductos = new RegistrarProductos();
             this.Hide();
-            ToRegistro.Show();
+            ToRegistrarProductos.Show();
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -51,6 +51,13 @@ namespace Proyecto_OASIS
             Comida ToRegistro = new Comida();
             this.Hide();
             ToRegistro.Show();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Login ToLogin = new Login();
+            this.Hide();
+            ToLogin.Show();
         }
     }
 }

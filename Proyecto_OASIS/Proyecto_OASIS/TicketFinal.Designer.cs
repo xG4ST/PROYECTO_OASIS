@@ -69,6 +69,7 @@
             this.label2.Size = new System.Drawing.Size(925, 203);
             this.label2.TabIndex = 20;
             this.label2.Text = "NUEVA VENTANA";
+            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // button1
             // 
@@ -81,6 +82,7 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "REGRESAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // TicketFinal
             // 

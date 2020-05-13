@@ -38,5 +38,12 @@ namespace Proyecto_OASIS
             this.Hide();
             ToComida.Show();
         }
+
+        private void Back_button_Click(object sender, EventArgs e)
+        {
+            Elegir ToElegir = new Elegir();
+            this.Hide();
+            ToElegir.Show();
+        }
     }
 }

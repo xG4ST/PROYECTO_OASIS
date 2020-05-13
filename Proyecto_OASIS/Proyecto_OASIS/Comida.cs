@@ -8,7 +8,7 @@ namespace Proyecto_OASIS
 {
     public partial class Comida : Form
     {
-      MySqlConnection conexion = new MySqlConnection("server = 127.0.0.1; database= snack_db; Uid = root; pwd = 2000;");
+      MySqlConnection conexion = new MySqlConnection("server = localhost; database= snack_db; Uid = root; pwd = ;");
 
         public Comida()
         {
@@ -242,6 +242,23 @@ namespace Proyecto_OASIS
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Lbhora_Click(object sender, EventArgs e)
+        {
+            lbhora.Text = DateTime.Now.ToString("hh:mm:ss dddd MMMM yyy ");
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            lbhora.Text = DateTime.Now.ToString("hh:mm:ss dddd MMMM yyy ");
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Elegir ToElegir = new Elegir();
+            this.Hide();
+            ToElegir.Show();
         }
     }
 }

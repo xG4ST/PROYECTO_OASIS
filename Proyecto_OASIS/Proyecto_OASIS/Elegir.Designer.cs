@@ -44,7 +44,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("BigNoodleTitling", 140.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(0)))), ((int)(((byte)(109)))));
-            this.label3.Location = new System.Drawing.Point(197, 69);
+            this.label3.Location = new System.Drawing.Point(12, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(1245, 203);
             this.label3.TabIndex = 17;
@@ -57,7 +57,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("BigNoodleTitling", 140.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(0)))), ((int)(((byte)(109)))));
-            this.label1.Location = new System.Drawing.Point(257, 258);
+            this.label1.Location = new System.Drawing.Point(12, 251);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1082, 203);
             this.label1.TabIndex = 18;
@@ -70,7 +70,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("BigNoodleTitling", 140.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(0)))), ((int)(((byte)(109)))));
-            this.label2.Location = new System.Drawing.Point(368, 435);
+            this.label2.Location = new System.Drawing.Point(12, 425);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(826, 203);
             this.label2.TabIndex = 19;
@@ -118,6 +118,7 @@
             this.button1.TabIndex = 29;
             this.button1.Text = "REGRESAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // Elegir
             // 

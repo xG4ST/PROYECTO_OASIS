@@ -48,7 +48,7 @@
             this.lbhora.BackColor = System.Drawing.Color.Transparent;
             this.lbhora.Font = new System.Drawing.Font("BigNoodleTitling", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbhora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(194)))), ((int)(((byte)(149)))));
-            this.lbhora.Location = new System.Drawing.Point(655, -1);
+            this.lbhora.Location = new System.Drawing.Point(985, 9);
             this.lbhora.Name = "lbhora";
             this.lbhora.Size = new System.Drawing.Size(130, 70);
             this.lbhora.TabIndex = 27;
@@ -84,6 +84,7 @@
             this.back_button.TabIndex = 34;
             this.back_button.Text = "REGRESAR";
             this.back_button.UseVisualStyleBackColor = false;
+            this.back_button.Click += new System.EventHandler(this.Back_button_Click);
             // 
             // label2
             // 
@@ -113,12 +114,11 @@
             // 
             this.registerpassword_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(171)))), ((int)(((byte)(0)))));
             this.registerpassword_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.registerpassword_textbox.Font = new System.Drawing.Font("BigNoodleTitling", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerpassword_textbox.Font = new System.Drawing.Font("BigNoodleTitling", 71.99999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerpassword_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(0)))), ((int)(((byte)(109)))));
             this.registerpassword_textbox.Location = new System.Drawing.Point(458, 182);
             this.registerpassword_textbox.Multiline = true;
             this.registerpassword_textbox.Name = "registerpassword_textbox";
-            this.registerpassword_textbox.PasswordChar = '*';
             this.registerpassword_textbox.Size = new System.Drawing.Size(878, 110);
             this.registerpassword_textbox.TabIndex = 31;
             // 
@@ -126,7 +126,7 @@
             // 
             this.registeruser_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(171)))), ((int)(((byte)(0)))));
             this.registeruser_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.registeruser_textbox.Font = new System.Drawing.Font("BigNoodleTitling", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registeruser_textbox.Font = new System.Drawing.Font("BigNoodleTitling", 71.99999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registeruser_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(0)))), ((int)(((byte)(109)))));
             this.registeruser_textbox.Location = new System.Drawing.Point(448, 468);
             this.registeruser_textbox.Multiline = true;
@@ -138,7 +138,7 @@
             // 
             this.name_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(171)))), ((int)(((byte)(0)))));
             this.name_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.name_textbox.Font = new System.Drawing.Font("BigNoodleTitling", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_textbox.Font = new System.Drawing.Font("BigNoodleTitling", 71.99999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(0)))), ((int)(((byte)(109)))));
             this.name_textbox.Location = new System.Drawing.Point(458, 314);
             this.name_textbox.Multiline = true;
