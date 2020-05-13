@@ -29,12 +29,21 @@ namespace Proyecto_OASIS
 
         private void Button4_Click(object sender, EventArgs e)
         {
-
+            TicketFinal ToTicketFinal = new TicketFinal();
+            this.Hide();
+            ToTicketFinal.Show();
         }
 
         private void Confirmacion_de_pedido_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Comida ToComida = new Comida();
+            this.Hide();
+            ToComida.Show();
         }
     }
 }

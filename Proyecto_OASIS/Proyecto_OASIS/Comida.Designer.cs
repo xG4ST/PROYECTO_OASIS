@@ -28,12 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
+            this.labelx = new System.Windows.Forms.Label();
+            this.lbhora = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,9 +72,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(0)))), ((int)(((byte)(109)))));
             this.label2.Location = new System.Drawing.Point(33, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(269, 113);
+            this.label2.Size = new System.Drawing.Size(563, 113);
             this.label2.TabIndex = 4;
-            this.label2.Text = "CLIENTE";
+            this.label2.Text = "CLIENTE: X X X X X ";
             // 
             // button1
             // 
@@ -104,12 +109,58 @@
             this.button2.Text = "Registrar";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // labelx
+            // 
+            this.labelx.AutoSize = true;
+            this.labelx.BackColor = System.Drawing.Color.Transparent;
+            this.labelx.Font = new System.Drawing.Font("BigNoodleTitling", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelx.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(194)))), ((int)(((byte)(149)))));
+            this.labelx.Location = new System.Drawing.Point(1, 9);
+            this.labelx.Name = "labelx";
+            this.labelx.Size = new System.Drawing.Size(267, 70);
+            this.labelx.TabIndex = 29;
+            this.labelx.Text = "SNACK OASIS";
+            // 
+            // lbhora
+            // 
+            this.lbhora.AutoSize = true;
+            this.lbhora.BackColor = System.Drawing.Color.Transparent;
+            this.lbhora.Font = new System.Drawing.Font("BigNoodleTitling", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbhora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(194)))), ((int)(((byte)(149)))));
+            this.lbhora.Location = new System.Drawing.Point(1031, 9);
+            this.lbhora.Name = "lbhora";
+            this.lbhora.Size = new System.Drawing.Size(130, 70);
+            this.lbhora.TabIndex = 30;
+            this.lbhora.Text = "HORA";
+            this.lbhora.Click += new System.EventHandler(this.Lbhora_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Yellow;
+            this.button3.Font = new System.Drawing.Font("BigNoodleTitling", 71.99999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(0)))), ((int)(((byte)(109)))));
+            this.button3.Location = new System.Drawing.Point(811, 723);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(309, 113);
+            this.button3.TabIndex = 31;
+            this.button3.Text = "REGRESAR";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
             // Comida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto_OASIS.Properties.Resources.Fondo;
             this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.lbhora);
+            this.Controls.Add(this.labelx);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button1);
@@ -133,5 +184,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label labelx;
+        private System.Windows.Forms.Label lbhora;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button3;
     }
 }

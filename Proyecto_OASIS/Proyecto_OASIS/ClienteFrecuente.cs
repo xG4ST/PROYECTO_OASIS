@@ -46,5 +46,10 @@ namespace Proyecto_OASIS
             this.Hide();
             ToComida.Show();
         }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            lbhora.Text = DateTime.Now.ToString("hh:mm:ss dddd MMMM yyy ");
+        }
     }
 }

@@ -16,5 +16,19 @@ namespace Proyecto_OASIS
         {
             InitializeComponent();
         }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+            Elegir ToElegir = new Elegir();
+            this.Hide();
+            ToElegir.Show();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Confirmacion_de_pedido ToElegir = new Confirmacion_de_pedido();
+            this.Hide();
+            ToElegir.Show();
+        }
     }
 }
