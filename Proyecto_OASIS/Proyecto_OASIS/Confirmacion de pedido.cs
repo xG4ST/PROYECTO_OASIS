@@ -31,5 +31,10 @@ namespace Proyecto_OASIS
         {
 
         }
+
+        private void Confirmacion_de_pedido_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

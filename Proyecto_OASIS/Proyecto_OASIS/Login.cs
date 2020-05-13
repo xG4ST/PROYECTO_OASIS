@@ -24,7 +24,7 @@ namespace Proyecto_OASIS
             string user = user_textbox.Text;
             string password = password_textbox.Text;
 
-            MySqlConnection conexion = new MySqlConnection("server = 127.0.0.1; database = snack_db; Uid = root; pwd = 2000;");
+            MySqlConnection conexion = new MySqlConnection("server = localhost; database = snack_db; Uid = root; pwd = ;");
             conexion.Open();
 
             MySqlCommand login = new MySqlCommand();
@@ -43,7 +43,7 @@ namespace Proyecto_OASIS
                 if (leer.Read())
                 {
                     MessageBox.Show("Bienvenido", "Log In", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Menu ToMenu = new Menu();
+                    Elegir ToMenu = new Elegir();
                     this.Hide();
                     ToMenu.Show();
                     conexion.Close();

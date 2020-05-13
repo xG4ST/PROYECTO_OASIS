@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_OASIS
 {
-    public partial class ClienteFrecuente : Form
+    public partial class Registrar_Cliente : Form
     {
-        public ClienteFrecuente()
+        public Registrar_Cliente()
         {
             InitializeComponent();
         }
@@ -22,25 +22,17 @@ namespace Proyecto_OASIS
             lbhora.Text = DateTime.Now.ToString("hh:mm:ss dddd MMMM yyy ");
         }
 
-        //private void Button1_Click(object sender, EventArgs e)
-        //{
-        //    MessageBox.Show("Bienvenido", "Log In", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //    Pedido_Externo ToMenu = new Pedido_Externo();
-        //    this.Hide();
-        //    ToMenu.Show();
-        //}
-
-        private void ClienteFrecuente_Load(object sender, EventArgs e)
+        private void Registrar_Cliente_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void Timer1_Tick(object sender, EventArgs e)
         {
-
+            lbhora.Text = DateTime.Now.ToString("hh:mm:ss dddd MMMM yyy ");
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Register_button_Click(object sender, EventArgs e)
         {
             Comida ToComida = new Comida();
             this.Hide();

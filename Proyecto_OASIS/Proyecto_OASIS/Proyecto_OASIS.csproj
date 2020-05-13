@@ -72,27 +72,21 @@
     <Compile Include="Confirmacion de pedido.Designer.cs">
       <DependentUpon>Confirmacion de pedido.cs</DependentUpon>
     </Compile>
+    <Compile Include="Elegir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Elegir.Designer.cs">
+      <DependentUpon>Elegir.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </Compile>
     <Compile Include="MySql\Conexion.cs" />
     <Compile Include="MySql\registerNewUserAccount.cs" />
     <Compile Include="MySql\userAccount.cs" />
-    <Compile Include="Pedido_Externo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pedido_Externo.Designer.cs">
-      <DependentUpon>Pedido_Externo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pedir_Orden.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,11 +95,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registrar Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar Cliente.Designer.cs">
+      <DependentUpon>Registrar Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarProductos.Designer.cs">
+      <DependentUpon>RegistrarProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketFinal.Designer.cs">
+      <DependentUpon>TicketFinal.cs</DependentUpon>
     </Compile>
     <Compile Include="Ya eres cliente.cs">
       <SubType>Form</SubType>
@@ -122,14 +134,11 @@
     <EmbeddedResource Include="Confirmacion de pedido.resx">
       <DependentUpon>Confirmacion de pedido.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Elegir.resx">
+      <DependentUpon>Elegir.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pedido_Externo.resx">
-      <DependentUpon>Pedido_Externo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pedir_Orden.resx">
       <DependentUpon>Pedir_Orden.cs</DependentUpon>
@@ -144,8 +153,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Registrar Cliente.resx">
+      <DependentUpon>Registrar Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarProductos.resx">
+      <DependentUpon>RegistrarProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketFinal.resx">
+      <DependentUpon>TicketFinal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ya eres cliente.resx">
       <DependentUpon>Ya eres cliente.cs</DependentUpon>
