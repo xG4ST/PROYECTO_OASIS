@@ -43,7 +43,7 @@ namespace Proyecto_OASIS
                 if (leer.Read())
                 {
                     MessageBox.Show("Bienvenido", "Log In", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Menu ToMenu = new Menu();
+                    Elegir ToMenu = new Elegir();
                     this.Hide();
                     ToMenu.Show();
                     conexion.Close();

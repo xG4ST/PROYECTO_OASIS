@@ -154,6 +154,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Confirmacion_de_pedido";
             this.Text = "Confirmacion_de_pedido";
+            this.Load += new System.EventHandler(this.Confirmacion_de_pedido_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

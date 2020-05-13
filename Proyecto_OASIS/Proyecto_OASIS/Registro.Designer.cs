@@ -41,6 +41,7 @@
             this.confirmpassword_textbox = new System.Windows.Forms.TextBox();
             this.lbhora = new System.Windows.Forms.Label();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // name_textbox
@@ -187,12 +188,25 @@
             this.horaFecha.Enabled = true;
             this.horaFecha.Tick += new System.EventHandler(this.HoraFecha_Tick);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("BigNoodleTitling", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(194)))), ((int)(((byte)(149)))));
+            this.label5.Location = new System.Drawing.Point(-2, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(267, 70);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "SNACK OASIS";
+            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto_OASIS.Properties.Resources.Fondo;
             this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.lbhora);
             this.Controls.Add(this.confirmpassword_textbox);
             this.Controls.Add(this.label4);
@@ -226,5 +240,6 @@
         private System.Windows.Forms.TextBox confirmpassword_textbox;
         private System.Windows.Forms.Label lbhora;
         private System.Windows.Forms.Timer horaFecha;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -26,5 +26,31 @@ namespace Proyecto_OASIS
         {
             lbhora.Text = DateTime.Now.ToString("hh:mm:ss dddd MMMM yyy ");
         }
+
+        private void Elegir_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+            Registro ToRegistro = new Registro();
+            this.Hide();
+            ToRegistro.Show();
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+            Registrar_Cliente ToRegistrar_Cliente = new Registrar_Cliente();
+            this.Hide();
+            ToRegistrar_Cliente.Show();
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+            Comida ToRegistro = new Comida();
+            this.Hide();
+            ToRegistro.Show();
+        }
     }
 }
