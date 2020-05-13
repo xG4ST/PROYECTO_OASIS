@@ -60,20 +60,18 @@ namespace Proyecto_OASIS
         {
             string input = Interaction.InputBox("Introduzca la contraseña de administrador para crear un usuario", "Aviso", "", -1, -1);
 
-            //if (input == )
-            //{
 
-            //}
-            //else
-            //{
-
-            //}
-
-            Registro ToRegistro = new Registro();
-            this.Hide();
-            ToRegistro.Show();
+            if (input == "admin")
+            {
+                Registro ToRegistro = new Registro();
+                this.Hide();
+                ToRegistro.Show();
+            }
+            else
+            {
+                MessageBox.Show("Contraseña de administrador incorrecta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-
 
         private void Lbhora_Click_1(object sender, EventArgs e)
         {
