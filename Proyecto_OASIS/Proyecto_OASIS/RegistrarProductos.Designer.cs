@@ -195,6 +195,7 @@
             this.button1.TabIndex = 27;
             this.button1.Text = "ACEPTAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lbhora
             // 
@@ -227,7 +228,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto_OASIS.Properties.Resources.Fondo;
-            this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.ClientSize = new System.Drawing.Size(1540, 845);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.lbhora);
             this.Controls.Add(this.button1);
