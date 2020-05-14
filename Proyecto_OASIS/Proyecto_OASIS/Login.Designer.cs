@@ -104,6 +104,7 @@
             // 
             // register_button
             // 
+            this.register_button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.register_button.BackColor = System.Drawing.Color.Yellow;
             this.register_button.Font = new System.Drawing.Font("BigNoodleTitling", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.register_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(0)))), ((int)(((byte)(109)))));

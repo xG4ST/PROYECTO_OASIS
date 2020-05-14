@@ -46,12 +46,27 @@ namespace Proyecto_OASIS
 
         private void Button4_Click(object sender, EventArgs e)
         {
+           
+            }
+
+        private void Button2_Click_1(object sender, EventArgs e)
+        {
+            
+             }
+
+    private void txtUrl_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void Button3_Click_1(object sender, EventArgs e)
+        {
             OpenFileDialog od = new OpenFileDialog();
             if (od.ShowDialog() == DialogResult.OK)
             {
                 Process proc = Process.Start(od.FileName);
                 proc.WaitForInputIdle();
-                
+
                 while (proc.MainWindowHandle == IntPtr.Zero)
                 {
                     Thread.Sleep(100);
@@ -61,9 +76,11 @@ namespace Proyecto_OASIS
             }
         }
 
-        private void txtUrl_KeyPress(object sender, KeyPressEventArgs e)
+        private void Button1_Click_1(object sender, EventArgs e)
         {
-            
+            Elegir ToElegir = new Elegir();
+            this.Hide();
+            ToElegir.Show();
         }
     }
 }
