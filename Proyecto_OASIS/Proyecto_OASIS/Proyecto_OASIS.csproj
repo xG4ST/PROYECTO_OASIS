@@ -66,11 +66,11 @@
     <Compile Include="Comida.Designer.cs">
       <DependentUpon>Comida.cs</DependentUpon>
     </Compile>
-    <Compile Include="Confirmacion de pedido.cs">
+    <Compile Include="ConfirmacionDePedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Confirmacion de pedido.Designer.cs">
-      <DependentUpon>Confirmacion de pedido.cs</DependentUpon>
+    <Compile Include="ConfirmacionDePedido.Designer.cs">
+      <DependentUpon>ConfirmacionDePedido.cs</DependentUpon>
     </Compile>
     <Compile Include="Elegir.cs">
       <SubType>Form</SubType>
@@ -84,16 +84,18 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MySql\clientAccount.cs" />
     <Compile Include="MySql\Conexion.cs" />
+    <Compile Include="MySql\registerNewClient.cs" />
     <Compile Include="MySql\registerNewUserAccount.cs" />
     <Compile Include="MySql\userAccount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registrar Cliente.cs">
+    <Compile Include="RegistrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registrar Cliente.Designer.cs">
-      <DependentUpon>Registrar Cliente.cs</DependentUpon>
+    <Compile Include="RegistrarCliente.Designer.cs">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistrarProductos.cs">
       <SubType>Form</SubType>
@@ -113,11 +115,11 @@
     <Compile Include="TicketFinal.Designer.cs">
       <DependentUpon>TicketFinal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ya eres cliente.cs">
+    <Compile Include="YaEresCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ya eres cliente.Designer.cs">
-      <DependentUpon>Ya eres cliente.cs</DependentUpon>
+    <Compile Include="YaEresCliente.Designer.cs">
+      <DependentUpon>YaEresCliente.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ClienteFrecuente.resx">
       <DependentUpon>ClienteFrecuente.cs</DependentUpon>
@@ -125,8 +127,8 @@
     <EmbeddedResource Include="Comida.resx">
       <DependentUpon>Comida.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Confirmacion de pedido.resx">
-      <DependentUpon>Confirmacion de pedido.cs</DependentUpon>
+    <EmbeddedResource Include="ConfirmacionDePedido.resx">
+      <DependentUpon>ConfirmacionDePedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Elegir.resx">
       <DependentUpon>Elegir.cs</DependentUpon>
@@ -144,8 +146,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Registrar Cliente.resx">
-      <DependentUpon>Registrar Cliente.cs</DependentUpon>
+    <EmbeddedResource Include="RegistrarCliente.resx">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarProductos.resx">
       <DependentUpon>RegistrarProductos.cs</DependentUpon>
@@ -156,8 +158,8 @@
     <EmbeddedResource Include="TicketFinal.resx">
       <DependentUpon>TicketFinal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ya eres cliente.resx">
-      <DependentUpon>Ya eres cliente.cs</DependentUpon>
+    <EmbeddedResource Include="YaEresCliente.resx">
+      <DependentUpon>YaEresCliente.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
