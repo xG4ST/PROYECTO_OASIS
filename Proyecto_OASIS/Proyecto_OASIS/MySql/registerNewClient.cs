@@ -13,7 +13,7 @@ namespace Proyecto_OASIS.MySql
         {
             int devolver = 0;
             MySqlCommand comand = new MySqlCommand(String.Format("INSERT INTO client(name_client, email_client, tel_client) values('{0}', '{1}', '{2}')",
-                add.name_client, add.email_client, add.tel_client), Conexion.obtainConexion());
+                add.name_client, add.email_client, add.tel_client), Connection.GetConnection());
             devolver = comand.ExecuteNonQuery();
             return devolver;
         }

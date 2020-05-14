@@ -91,7 +91,7 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="MySql\clientAccount.cs" />
-    <Compile Include="MySql\Conexion.cs" />
+    <Compile Include="MySql\Connection.cs" />
     <Compile Include="MySql\registerNewClient.cs" />
     <Compile Include="MySql\registerNewUserAccount.cs" />
     <Compile Include="MySql\userAccount.cs" />

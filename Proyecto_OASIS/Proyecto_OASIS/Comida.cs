@@ -2,13 +2,14 @@
 using System;
 using System.Data;
 using System.Windows.Forms;
+using Proyecto_OASIS.MySql;
 
 
 namespace Proyecto_OASIS
 {
     public partial class Comida : Form
     {
-      MySqlConnection conexion = new MySqlConnection("server = 127.0.0.1; database= snack_db; Uid = root; pwd = 2000;");
+      MySqlConnection conexion;
 
         public Comida()
         {
@@ -23,7 +24,7 @@ namespace Proyecto_OASIS
 
             string product = "Alitas";
 
-            conexion.Open();
+            conexion = Connection.GetConnection();
             MySqlCommand cm = new MySqlCommand("SELECT id_prod, name_prod, des_prod FROM product WHERE name_prod = @product", conexion);
             cm.Parameters.AddWithValue("@product", product);
             MySqlDataAdapter da = new MySqlDataAdapter(cm);
