@@ -38,5 +38,10 @@ namespace Proyecto_OASIS
             this.Hide();
             ToMenu.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
