@@ -64,11 +64,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("BigNoodleTitling", 140.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(0)))), ((int)(((byte)(109)))));
-            this.label2.Location = new System.Drawing.Point(316, 492);
+            this.label2.Location = new System.Drawing.Point(407, 492);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(925, 203);
+            this.label2.Size = new System.Drawing.Size(782, 203);
             this.label2.TabIndex = 20;
-            this.label2.Text = "NUEVA VENTANA";
+            this.label2.Text = "NUEVA VENTA";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // button1
