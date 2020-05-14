@@ -92,7 +92,9 @@
     </Compile>
     <Compile Include="MySql\clientAccount.cs" />
     <Compile Include="MySql\Conexion.cs" />
+    <Compile Include="MySql\product.cs" />
     <Compile Include="MySql\registerNewClient.cs" />
+    <Compile Include="MySql\registerNewProduct.cs" />
     <Compile Include="MySql\registerNewUserAccount.cs" />
     <Compile Include="MySql\userAccount.cs" />
     <Compile Include="Program.cs" />
