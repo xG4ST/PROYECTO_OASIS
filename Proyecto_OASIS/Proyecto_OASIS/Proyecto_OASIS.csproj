@@ -78,6 +78,12 @@
     <Compile Include="Elegir.Designer.cs">
       <DependentUpon>Elegir.cs</DependentUpon>
     </Compile>
+    <Compile Include="Juego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Juego.Designer.cs">
+      <DependentUpon>Juego.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Elegir.resx">
       <DependentUpon>Elegir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Juego.resx">
+      <DependentUpon>Juego.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -198,6 +207,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen 31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo 2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
