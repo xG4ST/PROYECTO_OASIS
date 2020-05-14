@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Microsoft.VisualBasic;
+using Proyecto_OASIS.MySql;
 
 namespace Proyecto_OASIS
 {
@@ -24,8 +18,7 @@ namespace Proyecto_OASIS
             string user = user_textbox.Text;
             string password = password_textbox.Text;
 
-            MySqlConnection conexion = new MySqlConnection("server = 127.0.0.1; database = snack_db; Uid = root; pwd = 2000;");
-            conexion.Open();
+            MySqlConnection conexion = Connection.GetConnection();
 
             MySqlCommand login = new MySqlCommand();
             login.CommandText = "SELECT * FROM user WHERE account_user = @user AND password_user = @password";

@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using Proyecto_OASIS.MySql;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -23,7 +24,7 @@ namespace Proyecto_OASIS
 
             string product = "Alitas";
 
-            conexion.Open();
+            Connection.GetConnection();
             MySqlCommand cm = new MySqlCommand("SELECT id_prod, name_prod, des_prod FROM product WHERE name_prod = @product", conexion);
             cm.Parameters.AddWithValue("@product", product);
             MySqlDataAdapter da = new MySqlDataAdapter(cm);
