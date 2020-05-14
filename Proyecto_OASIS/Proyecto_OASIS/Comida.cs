@@ -8,7 +8,7 @@ namespace Proyecto_OASIS
 {
     public partial class Comida : Form
     {
-      MySqlConnection conexion = new MySqlConnection("server = localhost; database= snack_db; Uid = root; pwd = ;");
+      MySqlConnection conexion = new MySqlConnection("server = 127.0.0.1; database= snack_db; Uid = root; pwd = 2000;");
 
         public Comida()
         {
